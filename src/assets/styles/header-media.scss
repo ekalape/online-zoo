@@ -1,0 +1,196 @@
+@import './normalize.css';
+@import './variables.scss';
+
+@media (max-width: 1000px) {
+  header {
+    max-width: 1000px;
+    letter-spacing: 0.2px;
+  }
+
+  .header-container {
+    //  max-width: 58.75rem;
+    max-width: 100%;
+
+    padding: 0.875rem 1.875rem;
+  }
+  .menu {
+    gap: 2.9rem;
+  }
+  .logo-container {
+    height: 53px;
+  }
+}
+
+/* --------------------------------------- 1000 - 640px ----------------------------------- */
+@media (max-width: 999px) and (min-width: 641px) {
+  .header-container__menu {
+    margin-left: 6.3%;
+  }
+  .menu {
+    gap: 5.8%;
+  }
+}
+
+@media (max-width: 682px) and (min-width: 641px) {
+  li {
+    font-size: 13px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------- 640px ----------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  header {
+    //letter-spacing: 0.2px;
+    max-width: 640px;
+
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 20px;
+    position: fixed;
+    overflow-x: hidden;
+
+    z-index: 12;
+  }
+
+  .logo_tablet {
+    display: block;
+    width: 47px;
+    height: 29px;
+    font-size: 12.3px;
+    line-height: 14.75px;
+    position: relative;
+    margin: 0;
+    color: white;
+
+    &::before {
+      content: url('../icons/bamboo.png');
+      display: block;
+      width: 5px;
+      height: 13px;
+      position: absolute;
+      bottom: 3px;
+      left: 2px;
+    }
+  }
+  .dark-cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+    transition: 1s;
+    z-index: 8;
+  }
+  .header-container {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    color: #333b41;
+    padding: 54px 10px 40px 10px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    right: -700px;
+    top: 0;
+    z-index: 11;
+    transition: 1s;
+  }
+  .menu_out {
+    right: 0;
+  }
+
+  .header-container__menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    a {
+      color: #333b41;
+    }
+  }
+
+  .hamburger {
+    width: 18px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 14;
+    &:hover .hamburger__line {
+      background-color: $c_orange-dark;
+    }
+    &:active .hamburger__line {
+      background-color: $c_green;
+    }
+  }
+  .hamburger__line {
+    padding: 1px 9px;
+    background-color: white;
+    border-radius: 2px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+
+  /* !!!!!!!!!!!!! hamburger change start !!!!!!!!!!!!!!  */
+  .hamburger.change .hamburger__line:nth-child(1) {
+    -webkit-transform: rotate(27deg);
+    -moz-transform: rotate(27deg);
+    -o-transform: rotate(27deg);
+    transform: rotate(27deg);
+  }
+  .hamburger.change .hamburger__line:nth-child(3) {
+    -webkit-transform: rotate(-27deg);
+    -moz-transform: rotate(-27deg);
+    -o-transform: rotate(-27deg);
+    transform: rotate(-27deg);
+  }
+  .hamburger.change .hamburger__line:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  /* !!!!!!!!!!!!! hamburger change end !!!!!!!!!!!!!!  */
+  .logo-container {
+    margin-bottom: 30px;
+    color: #fe9013;
+    border: 1px solid #fe9013;
+  }
+  li:last-of-type {
+    margin: 0;
+  }
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------------- 320px ----------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+@media (max-width: 320px) {
+  header {
+    max-width: 320px;
+    width: 100%;
+    padding: 0 11px;
+  }
+  .header-container {
+    right: -320px;
+  }
+  .menu_out {
+    right: 0;
+  }
+}

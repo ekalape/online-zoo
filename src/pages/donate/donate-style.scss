@@ -1,0 +1,443 @@
+@import '../../assets/styles/normalize.css';
+@import '../../assets/styles/variables.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.4s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  input {
+    appearance: none;
+  }
+}
+
+.lm {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+main {
+  width: 100%;
+}
+.head {
+  width: 100%;
+  height: 386px;
+  background-image: url('../../assets/images/panda_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.donInfo {
+  width: 100%;
+  margin: auto;
+  background: $c_orange_grad;
+  padding: 40px 15px 180px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donInfo__text {
+  max-width: 1190px;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 16px;
+    line-height: 22.4px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    //margin-top: 5px;
+    font-size: 36px;
+    line-height: 46.8px;
+  }
+  h4:first-of-type {
+    text-transform: uppercase;
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  h4:last-of-type {
+    color: #fe9013;
+    align-self: flex-start;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.selection {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 92px;
+
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-size: 48px;
+    line-height: 57.6px;
+    color: #fe9013;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #333b41;
+    align-self: flex-start;
+  }
+  p:last-of-type {
+    font-size: 16px;
+    line-height: 22px;
+    align-self: center;
+    margin-bottom: 22px;
+  }
+}
+.diet {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  margin: 60px 12px 50px 0;
+  .diet__quantity {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    padding-top: 5px;
+    position: relative;
+    margin-top: 100px;
+
+    .quantity__number {
+      width: 100%;
+      font-size: 72px;
+      line-height: 57.6px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #000000;
+      text-align: center;
+    }
+    .quantity__text {
+      width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+      color: #333b41;
+      text-align: center;
+    }
+    &::after {
+      content: url('../../assets/icons/x_icon.png');
+      display: block;
+      position: relative;
+      top: -97px;
+      right: -97px;
+    }
+  }
+  img {
+    display: block;
+    width: 284px;
+    height: 246px;
+  }
+}
+.input-container {
+  margin-top: 40px;
+  position: relative;
+}
+.money-input {
+  width: 268px;
+  height: 54px;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  padding: 16px 9px;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #929699;
+  -moz-appearance: textfield;
+  outline: 1px solid #929699;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #929699;
+  }
+  &:optional {
+    outline: 1px solid $c_black_blue;
+    color: $c_black_blue;
+    & ~ .dollar-sign {
+      color: $c_black_blue;
+    }
+    &::placeholder {
+      color: $c_black_blue;
+    }
+  }
+  &:focus {
+    outline: 1px solid $c_green;
+    color: $c_green;
+    & ~ .dollar-sign {
+      color: $c_green;
+    }
+    &::placeholder {
+      color: $c_green;
+    }
+  }
+  &:invalid {
+    outline: 1px solid $c_red;
+    color: $c_red;
+    & ~ .dollar-sign {
+      color: $c_red;
+    }
+    &::placeholder {
+      color: $c_red;
+    }
+  }
+}
+.dollar-sign {
+  position: absolute;
+  font-size: 20px;
+  line-height: 22.4px;
+  top: 15px;
+  right: 10px;
+  color: #929699;
+  z-index: 5;
+}
+
+.input_valid {
+  outline: 1px solid $c_green !important;
+  color: $c_green !important;
+  & ~ .dollar-sign {
+    color: $c_green !important;
+  }
+}
+
+.btn {
+  @include btn-round(298px, 54px, 25px, 'Feed a friend now');
+  margin: 11px 0 30px 5px;
+}
+
+.frequent {
+  display: flex;
+  //gap: 30px;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.frequent-term {
+  position: relative;
+  display: block;
+  margin-left: 7px;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #333b41;
+  cursor: pointer;
+  &:last-of-type {
+    margin-left: 40px;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  &:hover input:not(:checked) ~ .frequent__radBtn {
+    opacity: 0.3;
+    background-color: #fe9013;
+  }
+
+  &:active input:not(:checked) ~ .frequent__radBtn {
+    background-color: $c_green;
+    border: 1px solid $c_green;
+  }
+  & input:checked ~ .frequent__radBtn {
+    background-color: $c_green;
+    border: 1px solid $c_green;
+  }
+}
+
+.frequent__radBtn {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+  top: -21px;
+  left: -23px;
+}
+.frequent__radBtn-checked {
+  position: relative;
+  display: block;
+  width: 11px;
+  height: 10px;
+  background-color: #fe9013;
+  border-radius: 50%;
+  top: 1.7px;
+  left: 1.6px;
+  opacity: 0;
+}
+
+/* range */
+
+.amount-container {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  position: relative;
+
+  .am {
+    font-size: 16px;
+    line-height: 140%;
+    color: black;
+    margin-bottom: 15px;
+    margin-left: 3px;
+  }
+}
+.amount {
+  max-width: 100%;
+  position: relative;
+  .amount__bg {
+    position: absolute;
+    min-width: 100%;
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+    z-index: 3;
+    &::before {
+      content: '';
+      display: block;
+      width: 94%;
+      height: 2px;
+      background-color: #72828e;
+      position: relative;
+      left: 3%;
+      top: 46%;
+    }
+  }
+}
+.steps__wrapper {
+  width: 101.5%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  left: -1%;
+}
+.step {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: -40px;
+}
+
+.step__label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -12px;
+  //gap: 12px;
+  z-index: 5;
+  &:hover input:not(:checked) ~ .step__input {
+    animation: pulse 1s infinite;
+  }
+  &:active input:not(:checked) ~ .step__input {
+    background-color: $c_green;
+  }
+}
+.step__input {
+  display: block;
+  margin: 20px;
+  width: 10px;
+  height: 10px;
+  background-color: $c_yellow;
+
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+    box-shadow: 1px 1px 3px $c_yellow, -1px -1px 3px $c_yellow;
+  }
+  60% {
+    transform: scale(1.3);
+    box-shadow: px 1px 7px $c_yellow, -1px -1px 7px $c_yellow;
+  }
+  80% {
+    transform: scale(1.2);
+    box-shadow: 1px 1px 3px $c_yellow, -1px -1px 3px $c_yellow;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hiddeninput {
+  &:checked ~ .step__input::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    background: transparent;
+    border: 2px solid #fe9013;
+    border-radius: 50%;
+    top: -8px;
+    left: -8.5px;
+  }
+  &:checked ~ .step__input::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: transparent;
+    border: 2px solid #fe9013;
+    border-radius: 50%;
+    top: -43px;
+    left: -16.5px;
+  }
+  &:checked ~ .step__nominative {
+    color: #fe9013;
+  }
+}
+.step__nominative {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 36.4px;
+  color: #333b41;
+  align-self: flex-start;
+  padding-left: 5px;
+}
+.modal-show {
+  display: flex;
+}

@@ -1,0 +1,138 @@
+$c_green: #4b9200;
+$c_yellow: #ffee2e;
+$c_orange-dark: #e47209;
+$c_red: #d31414;
+$c_black_blue: #333b41;
+$c_gray: #767474;
+$c_light_gray: #f1f3f2;
+$c_gray_smoky: #ababab;
+$c_frosted_white: #fdfdff;
+$c_orange: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+$c_orange_grad: linear-gradient(
+    315.75deg,
+    rgba(254, 210, 144, 0.7) 30.06%,
+    #febdab 100.95%,
+    rgba(254, 210, 144, 0.7) 106.36%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  );
+$c_pink_grad: linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  ),
+  linear-gradient(
+    315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #e0d8f0 80.49%,
+    #eaf7fe 127.9%,
+    #eaf7fe 149.54%
+  );
+
+@mixin orange_gradient_text {
+  background: $c_orange;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@mixin btn-r($width, $height, $radius) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  border: none;
+  background: $c_orange;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  &:hover {
+    background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
+  }
+  &:active {
+    background: linear-gradient(113.96deg, $c_green 1.49%, $c_green 101.44%);
+  }
+}
+.disabled-btn {
+  background: linear-gradient(113.96deg, $c_gray 1.49%, $c_gray 101.44%);
+}
+
+@mixin btn-round($width, $height, $radius, $text) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  border: none;
+  background: $c_orange;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease 0.4s;
+  &::before {
+    content: $text;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e47209;
+    color: white;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all ease 0.4s;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 1;
+      background: $c_green;
+    }
+    background: linear-gradient(113.96deg, $c_green 1.49%, $c_green 101.44%);
+  }
+}
+.disabled-btn {
+  background: linear-gradient(113.96deg, $c_gray 1.49%, $c_gray 101.44%);
+}

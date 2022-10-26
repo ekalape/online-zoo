@@ -1,0 +1,68 @@
+[
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon1.png",
+    "name": "Michael John",
+    "place": "Local Austria",
+    "day": "Today"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon2.png",
+    "name": "Oskar Samborsky",
+    "place": "Local Austria",
+    "day": "Yesterday"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon3.png",
+    "name": "Fredericka Michelin",
+    "place": "Local Austria",
+    "day": "Today"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon4.png",
+    "name": "Mila Riksha",
+    "place": "Local Austria",
+    "day": "Today"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon5.png",
+    "name": "Amanda Bea",
+    "place": "Local France",
+    "day": "Yesterday"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon6.png",
+    "name": "Steward Bond",
+    "place": "Local Austria",
+    "day": "Yesterday"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon1.png",
+    "name": "Grenadine",
+    "place": "Local France",
+    "day": "Today"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon8.png",
+    "name": "María Teresa",
+    "place": "Barcelona",
+    "day": "Yesterday"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon9.png",
+    "name": "Jorge Luis",
+    "place": "Barcelona",
+    "day": "Yesterday"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon10.png",
+    "name": "Hans Helmut",
+    "place": "Local Austria",
+    "day": "Today"
+  },
+  {
+    "avatarUrl": "../../assets/icons/avatars/profile_icon11.png",
+    "name": "Herma Kimmel",
+    "place": "Colorado",
+    "day": "Today"
+  }
+]

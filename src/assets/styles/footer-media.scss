@@ -1,0 +1,285 @@
+@import './normalize.css';
+@import './variables.scss';
+
+@media (max-width: 1000px) {
+  .footer-wrapper {
+    width: 100%;
+    padding: 40px 31px;
+  }
+  .socials {
+    gap: 11px;
+  }
+  .btn-donate {
+    top: -3px;
+  }
+  .footer-lower__center {
+    padding-left: 19%;
+    .footer-menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      gap: 48px;
+      li:last-of-type {
+        margin: 0;
+      }
+      @media (max-width: 900px) {
+        gap: 41px;
+      }
+      @media (max-width: 800px) {
+        gap: 34px;
+      }
+    }
+  }
+  .footer-upper__right {
+    padding-left: 9px;
+    padding-right: 32px;
+  }
+  .subscribe-form {
+    gap: 11px;
+  }
+  .subscribe-form__input {
+    &::placeholder {
+      padding: 10px 5px;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* -------------------------------------- 640 ------------------------------------ */
+/* -------------------------------------- 789 --------------------------------------- */
+
+@media (max-width: 789px) {
+  footer {
+    width: 100%;
+    height: 282px;
+  }
+
+  .footer-wrapper {
+    padding: 13px 18px 0 20px;
+
+    grid-template-rows: 200px auto;
+  }
+  .footer-upper,
+  .footer-lower {
+    min-height: auto;
+  }
+
+  .footer-upper__right,
+  .footer-lower__left {
+    display: none;
+  }
+  .footer-upper__left {
+    a {
+      display: block;
+      height: 25%;
+    }
+    gap: 35px;
+  }
+
+  .footer-upper__center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  .socials__img {
+    &::after {
+      content: '';
+    }
+    &:hover {
+      background-color: $c_orange-dark;
+      &::after {
+        color: $c_orange-dark;
+      }
+    }
+    &:active {
+      background-color: $c_green;
+      &::after {
+        color: $c_green;
+      }
+    }
+  }
+
+  .footer-lower__center {
+    padding-left: 0;
+  }
+  .footer-lower__right {
+    justify-content: flex-start;
+  }
+  .footer-lower__center .footer-menu {
+    gap: 37px;
+    margin-left: 0px;
+    @media (max-width: 580px) {
+      gap: 20px;
+    }
+  }
+  .footer-lower__right {
+    gap: 5px;
+    a {
+      margin-top: 5px;
+    }
+  }
+}
+
+/* --------------------------------------566---------------------------------------------- */
+/* --------------------------------------566---------------------------------------------- */
+@media (max-width: 566px) {
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .logo_footer {
+    display: block;
+    color: white;
+    // width: 128px;
+    height: 23px;
+    font-size: 19px;
+    line-height: 22.8px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: url('../icons/bamboo.svg');
+      display: block;
+      /*    width: 8px;
+      height: 16px; */
+      position: absolute;
+      bottom: 0;
+      left: 73px;
+    }
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 8px 10px;
+    margin: auto;
+  }
+
+  .footer-upper,
+  .footer-lower {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .footer-upper__center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 16px;
+  }
+
+  .footer-upper__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .logo-image {
+      display: none;
+    }
+  }
+  .footer-lower {
+    gap: 30px;
+  }
+  .footer-lower__right {
+    margin-top: 22px;
+    gap: 9px;
+    a {
+      display: block;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  .footer-lower__center .footer-menu {
+    gap: 19px;
+  }
+  .btn-donate {
+    top: -1px;
+  }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* -------------------------------------- 320 ------------------------------------ */
+/* --------------------------------------------------------------------------------- */
+
+@media (max-width: 320px) {
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .logo_footer {
+    display: block;
+    color: white;
+    // width: 128px;
+    height: 23px;
+    font-size: 19px;
+    line-height: 22.8px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: url('../icons/bamboo.svg');
+      display: block;
+      /*    width: 8px;
+      height: 16px; */
+      position: absolute;
+      bottom: 0;
+      left: 73px;
+    }
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 8px 10px;
+    margin: auto;
+  }
+
+  .footer-upper,
+  .footer-lower {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+  .footer-upper__center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 16px;
+  }
+
+  .footer-upper__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .logo-image {
+      display: none;
+    }
+  }
+  .footer-lower {
+    gap: 30px;
+  }
+  .footer-lower__right {
+    align-self: flex-end;
+    margin-top: 22px;
+    gap: 9px;
+    a {
+      display: block;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  .footer-lower__center .footer-menu {
+    gap: 30px;
+    width: 100%;
+  }
+  .btn-donate {
+    top: -2px;
+  }
+}
