@@ -1,0 +1,110 @@
+[
+  {
+    "url": "../../assets/images/gallery/cheetahs.png",
+    "name": "cheetahs",
+    "native": "Native to Africa",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/croco.jpg",
+    "name": "alligators",
+    "native": "Native to Southeastern U. S.",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/eagles.png",
+    "name": "eagles",
+    "native": "Native to South America",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/penguins.png",
+    "name": "penguins",
+    "native": "Native to Antarctica",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/giant-pandas.png",
+    "name": "giant pandas",
+    "native": "Native to Southwest China",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/gorillas.png",
+    "name": "gorillas",
+    "native": "Native to Congo",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/squirrel.jpg",
+    "name": "squirrel",
+    "native": "Americas, Eurasia, and Africa",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/sloth.png",
+    "name": "Two-toed Sloth",
+    "native": "Mesoamerica, South America",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/otter.jpg",
+    "name": "otters",
+    "native": "Native to Eurasia",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/lemure.jpg",
+    "name": "lemur",
+    "native": "Native to Madagascar",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/bear.jpg",
+    "name": "Polar bears",
+    "native": "Native to Arctic Circle",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/tiger.jpg",
+    "name": "Tigers",
+    "native": "Native to Asia",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/canguroo.jpg",
+    "name": "Kangaroo",
+    "native": "Native to Australia",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/lion.jpg",
+    "name": "Lion",
+    "native": "Native to Africa",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/dolphin.jpg",
+    "name": "Dolphin",
+    "native": "Native to oceans and seas",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/tucan.jpg",
+    "name": "Toucan",
+    "native": "Tropics of the Americas",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/zhirafa.jpg",
+    "name": "Giraffe",
+    "native": "Native to Africa",
+    "food": "../../assets/icons/banana-bamboo_icon.png"
+  },
+  {
+    "url": "../../assets/images/gallery/wolf.jpg",
+    "name": "Wolf",
+    "native": "Eurasia and North America",
+    "food": "../../assets/icons/meet-fish_icon.png"
+  }
+]
